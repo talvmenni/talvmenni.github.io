@@ -1,0 +1,47 @@
+.header {
+  margin: 0;
+  padding: 0;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea; /* Optional background color */
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea; /* Optional background color */
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 60vw; /* 80% of the viewport's width */
+  height: 80vh; /* 80% of the viewport's height */
+  border: 1px solid #000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Optional shadow for depth */
+}
+
+.square {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  width: 100%;
+  height: 100%;
+}
+
+/* Alternate the color of the squares */
+.chessboard > div:nth-child(16n-15),
+.chessboard > div:nth-child(16n-13),
+.chessboard > div:nth-child(16n-11),
+.chessboard > div:nth-child(16n-9),
+.chessboard > div:nth-child(16n-6),
+.chessboard > div:nth-child(16n-4),
+.chessboard > div:nth-child(16n-2),
+.chessboard > div:nth-child(16n) {
+  background-color: rgba(125, 135, 150, 0.5); /* Semi-transparent gray */
+}
