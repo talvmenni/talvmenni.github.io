@@ -35,13 +35,13 @@
 }
 
 /* Alternate the color of the squares */
-.chessboard > div:nth-child(16n-15),
+.chessboard > div:nth-child(16n-16),
+.chessboard > div:nth-child(16n-14),
 .chessboard > div:nth-child(16n-13),
-.chessboard > div:nth-child(16n-11),
-.chessboard > div:nth-child(16n-9),
-.chessboard > div:nth-child(16n-6),
-.chessboard > div:nth-child(16n-4),
-.chessboard > div:nth-child(16n-2),
-.chessboard > div:nth-child(16n) {
+.chessboard > div:nth-child(16n-10),
+.chessboard > div:nth-child(16n-7),
+.chessboard > div:nth-child(16n-5),
+.chessboard > div:nth-child(16n-3),
+.chessboard > div:nth-child(16n-1) {
   background-color: rgba(125, 135, 150, 0.5); /* Semi-transparent gray */
 }
